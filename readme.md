@@ -22,4 +22,4 @@ When you have installed the dependencies using the command `pipenv install`
 you can simply run `pipenv run python render_design_graph.py` in the command line and the graph wil automatically open.
 
 ### Example Image
-- []
+![An example generated chatbot design](https://github.com/Luttik/chatbot-design-examples/blob/master/chatbot-design.svg)
