@@ -1,0 +1,70 @@
+system:
+  greeting:
+    name: Greeting
+    text: Welcome to your launchpad for all things Google IO?
+    note: YOU MIGHT WANT TO ADD RANDOM NOTES THAT SHOULD NOT BE VISIBLE IN THE GRAPH.
+    to:
+      - pre-io
+      - ask-attending
+      - post-io
+  pre-io:
+    name: Pre I/O Meny
+    text: As the Keeper of I/O-Specific Knowledge consider me your guide...
+  ask-attending:
+    name: Ask Attending
+    text: The festival's underaway right now. Are you one of the lucky attendees?
+    to:
+      - attending-yes
+      - attending-no
+  post-io:
+    name: Post I/O Menu
+    text: As the Keeper of I/O-Specific Knowledge consider me your guide...
+  attending-menu:
+    name: Attending Menu
+    text: Congrats! As the Keeper of I/O-Specific Knowledge consider me your guide ... What do you need?
+    to:
+      - schedule
+      - things-to-do
+      - directions
+  not-attending-menu:
+    name: Not Attending Menu
+    text: Then I can help you stay plugged In...
+  check-app-linked:
+    name: Check App Linked
+  things-to-do-menu:
+    name: Things To Do Menu
+    text: Sure. Do you want to ... or ... ?
+  ask-directions:
+    name: Ask Directions
+    text: Your time is too important to waste wandering around...
+
+
+user_query:
+  welcome:
+    name: '! Standard Welcome Event !'
+    text: '...'
+    to:
+      - greeting
+  attending-yes:
+    text: 'yes'
+    to:
+      - attending-menu
+  attending-no:
+    text: 'no'
+    to:
+      - not-attending-menu
+  schedule:
+    text: Schedule
+    to:
+      - check-app-linked
+  things-to-do:
+    text: Things to do
+    to:
+      - things-to-do-menu
+  directions:
+    text: Directions
+    to:
+      - ask-directions
+
+
+
