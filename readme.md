@@ -7,7 +7,7 @@ This series is addressed with questions like
  - Comparing the implementation with the design
  - Updating the design based on user interaction
 
-## First Example
+## First Example: Combining Sample Sentences with the Flow
 The first example is a tool that converts yaml into a graph. 
 This tool can help you with combining the sample sentences that you've designed with your high level flow.
 Additionally, this tool can help you spot weaknesses in your design
